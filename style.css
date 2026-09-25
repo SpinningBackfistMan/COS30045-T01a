@@ -1,0 +1,79 @@
+/* Colours taken from the power logo */
+:root {
+  --yellow: #FBE3A0;
+  --orange: #F4A12A;
+  --brown: #7A5C3A;
+  --cream: #FFF9EA;
+  --text: #3B2C1C;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top navigation */
+header { background: var(--brown); }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--yellow);
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo img { width: 48px; height: 48px; transition: transform 0.2s; }
+.logo:hover img { transform: rotate(15deg) scale(1.1); }
+
+.nav-links { list-style: none; display: flex; gap: 0.5rem; margin: 0; padding: 0; }
+
+.nav-links a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: var(--yellow);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+/* mouse-over feedback */
+.nav-links a:hover { background: var(--orange); color: var(--brown); }
+/* current page feedback */
+.nav-links a.active { background: var(--yellow); color: var(--brown); font-weight: bold; }
+
+/* Pages: only the active one is shown */
+main { flex: 1; max-width: 1000px; width: 100%; margin: 0 auto; padding: 1rem; }
+.page { display: none; }
+.page.active { display: block; }
+
+h1 { color: var(--brown); border-bottom: 3px solid var(--orange); padding-bottom: 0.3rem; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.card { background: var(--yellow); border: 2px solid var(--brown); border-radius: 10px; padding: 1rem; }
+.card h3 { margin-top: 0; color: var(--brown); }
+
+.placeholder { background: #fff; border: 2px dashed var(--orange); padding: 2rem; text-align: center; }
+
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { border: 1px solid var(--brown); padding: 0.5rem; text-align: left; }
+th { background: var(--orange); color: var(--brown); }
+.note { font-size: 0.85rem; }
+
+footer { background: var(--brown); color: var(--yellow); text-align: center; padding: 0.5rem 1rem; font-size: 0.9rem; }

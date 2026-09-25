@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Appliance Energy</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home" class="logo" data-page="home" aria-label="Go to home page">
+        <img src="images/logo.svg" alt="Power logo">
+        <span>Appliance Energy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" data-page="home">Home</a></li>
+        <li><a href="#televisions" data-page="televisions">Televisions</a></li>
+        <li><a href="#about" data-page="about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <h1>Appliance Energy Consumption in Australia</h1>
+      <p>Household appliances account for a large share of home electricity use in Australia.
+        This site will showcase data visualisations exploring how much energy common appliances
+        use and how Energy Rating labels help consumers choose efficient products.</p>
+      <div class="cards">
+        <div class="card"><h3>Energy Rating Label</h3><p>Stars from 1 to 10 show how efficient an appliance is compared with others of the same size.</p></div>
+        <div class="card"><h3>kWh per year</h3><p>The label's number estimates yearly electricity use under standard test conditions.</p></div>
+        <div class="card"><h3>Save money</h3><p>A more efficient appliance can cut running costs every year it is used.</p></div>
+      </div>
+    </section>
+
+    <section id="televisions" class="page">
+      <h1>Televisions</h1>
+      <p>Televisions sold in Australia must carry an Energy Rating label. Screen size and technology
+        (LCD, LED, OLED) strongly affect power consumption.</p>
+      <p class="placeholder">[Placeholder: data visualisation of TV energy use by screen size and star rating will go here.]</p>
+      <table>
+        <thead><tr><th>Screen size</th><th>Technology</th><th>Star rating</th><th>Energy (kWh/yr)*</th></tr></thead>
+        <tbody>
+          <tr><td>32"</td><td>LED</td><td>6</td><td>60</td></tr>
+          <tr><td>55"</td><td>LED</td><td>5</td><td>150</td></tr>
+          <tr><td>65"</td><td>OLED</td><td>4</td><td>250</td></tr>
+        </tbody>
+      </table>
+      <p class="note">*Placeholder values for demonstration only.</p>
+    </section>
+
+    <section id="about" class="page">
+      <h1>About Us</h1>
+      <p>This website was built for COS30045 Data Visualisation at Swinburne University of Technology.
+        It will host the data visualisations created throughout the unit.</p>
+      <p class="placeholder">[Placeholder: team or project details.]</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nelson anak Sikua. GenAI (Claude Code) was used to help generate code and placeholder content. See README.md.</p>
+  </footer>
+</body>
+</html>
